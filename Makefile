@@ -5,7 +5,7 @@ ifeq (compare,$(MAKECMDGOALS))
   COMPARE := 1
 endif
 
-AGBCC ?= tools/agbcc
+AGBCC ?= $(abspath ./tools/agbcc)
 
 # don't use dkP's base_tools anymore
 # because the redefinition of $(CC) conflicts
